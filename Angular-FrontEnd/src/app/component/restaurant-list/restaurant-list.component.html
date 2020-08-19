@@ -12,10 +12,10 @@
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let emp of restaurants">
-                    <td>{{emp.name}}</td>
-                    <td><button (click)="deleteRestaurant(emp.id)" class="btn btn-danger btn-delete">Delete</button>
-                        <button (click)="restaurantDetails(emp.id)" class="btn btn-info btn-detail"
+                <tr *ngFor="let restaurant of restaurants">
+                    <td>{{restaurant.name}}</td>
+                    <td><button (click)="deleteRestaurant(restaurant.id)" class="btn btn-danger btn-delete">Delete</button>
+                        <button (click)="restaurantDetails(restaurant.id)" class="btn btn-info btn-detail"
                             style="margin-left: 10px">Details</button>
                     </td>
                 </tr>
